@@ -6,3 +6,8 @@ The chatbot has been built based on a seq2seq model with attention mecanism and 
 ## Libraries used
   * Tensorflow 1.0.0
   * Numpy 1.18.5
+
+## Seq2seq Architecture 
+
+![seq2seq model](http://complx.me/img/seq2seq/seq2seq1.png)
+![seq2seq in depth](http://complx.me/img/seq2seq/seq2seq2.png)
