@@ -9,5 +9,5 @@ The chatbot has been built based on a seq2seq model with attention mecanism and 
 
 ## Seq2seq Architecture 
 
-![seq2seq model](http://complx.me/img/seq2seq/seq2seq1.png)
-![seq2seq in depth](http://complx.me/img/seq2seq/seq2seq2.png)
+![seq2seq model](https://miro.medium.com/max/3972/1*1JcHGUU7rFgtXC_mydUA_Q.jpeg)
+![seq2seq in depth](https://miro.medium.com/max/691/1*5nvwJsH4EfONv_fdKNvobA.png)
