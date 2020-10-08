@@ -20,7 +20,7 @@ params = {
 ## Training ##
 batch_index_check_training_loss = 100
 early_stopping = 1000
-checkpoint = "chatbot_weights.ckpt"  # path of the trained weights
+checkpoint = "./chatbot_weights.ckpt"  # path of the trained weights
 
 
 

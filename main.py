@@ -1,6 +1,6 @@
 from preprocessing import convert_string2int
 from chatbot_model import seq2seq_model, model_inputs
-from config import params, max_length
+from config import params, max_length, checkpoint
 from utils import load_voc
 import tensorflow as tf
 import numpy as np
@@ -35,7 +35,6 @@ if __name__ == "__main__":
                                         questionswords2int)
 
     # Load the weights and run the session
-    checkpoint = "./chatbot_weights.ckpt"
     session = tf.InteractiveSession()
     session.run(tf.global_variables_initializer())
     saver = tf.train.Saver()

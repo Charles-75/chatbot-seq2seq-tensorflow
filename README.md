@@ -9,7 +9,7 @@ The chatbot has been built based on a seq2seq model with attention mecanism and 
 
 ## Training
 
-To train the chatbot, go to the project's root directory and execute  `python training.py`, it may take a long long time to train (several hours). At the end it will save the weights of the seq2seq model in the current folder. 
+To train the chatbot, go to the project's root directory and execute  `python training.py`, it may take a long long time to train (several hours even days depending on your computer ressources). At the end it will save the weights of the seq2seq model `chatbot_weights.ckpt` in the current folder. 
 
 ## Play with the chatbot
 
