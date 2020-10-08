@@ -1,6 +1,0 @@
-*.ipynb
-.ipynb_checkpoints
-*/.ipynb_checkpoints/*
-.idea
-/.gitignore
-/chatbot.py
