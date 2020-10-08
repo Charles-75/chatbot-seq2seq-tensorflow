@@ -7,6 +7,14 @@ The chatbot has been built based on a seq2seq model with attention mecanism and 
   * Tensorflow 1.0.0
   * Numpy 1.18.5
 
+## Training
+
+To train the chatbot, go to the project's root directory and execute  `python training.py`, it may take a long long time to train (several hours). At the end it will save the weights of the seq2seq model in the current folder. 
+
+## Play with the chatbot
+
+To interact with the chatbot, execute `python main.py`. You have to write your questions in the command prompt in order to get a response back from the chatbot. 
+
 ## Seq2seq Architecture 
 
 ![seq2seq model](https://miro.medium.com/max/3972/1*1JcHGUU7rFgtXC_mydUA_Q.jpeg)
