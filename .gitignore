@@ -2,5 +2,5 @@
 .ipynb_checkpoints
 */.ipynb_checkpoints/*
 .idea
-.gitignore
-chatbot.py
+/.gitignore
+/chatbot.py
