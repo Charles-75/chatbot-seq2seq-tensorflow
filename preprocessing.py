@@ -44,15 +44,17 @@ def clean_text(text):
     text = re.sub(r"that's", "that is", text)
     text = re.sub(r"what's", "what is", text)
     text = re.sub(r"where's", "where is", text)
+    text = re.sub(r"how's", "how is", text)
     text = re.sub(r"\'ll", " will", text)
     text = re.sub(r"\'ve", " have", text)
     text = re.sub(r"\'re", " are", text)
     text = re.sub(r"\'d", " would", text)
+    text = re.sub(r"n'", " not", text)
     text = re.sub(r"won't", "will not", text)
     text = re.sub(r"don't", "do not", text)
     text = re.sub(r"wouldn't", "would not", text)
     text = re.sub(r"can't", "cannot", text)
-    text = re.sub(r"[-()\"#/@;:<>{}+=~|.?,]", "", text)
+    text = re.sub(r"[-()\"#/@;:<>{}`+=~|.?,]", "", text)
     return text
 
 
@@ -63,6 +65,20 @@ def preprocess_data(questions, answers):
     clean_answers = []
     for answer in answers:
         clean_answers.append(clean_text(answer))
+
+    # Filtering out the questions and answers that are too short or too long
+    short_questions = []
+    short_answers = []
+    for i, question in enumerate(clean_questions):
+        if 2 <= len(question.split()) <= max_length:
+            short_questions.append(question)
+            short_answers.append(clean_answers[i])
+    clean_questions = []
+    clean_answers = []
+    for i, answer in enumerate(short_answers):
+        if 2 <= len(answer.split()) <= max_length:
+            clean_answers.append(answer)
+            clean_questions.append(short_questions[i])
 
     # Creating a dictionary that maps each word to its number of occurences
     word2count = {}
