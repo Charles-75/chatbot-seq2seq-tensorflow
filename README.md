@@ -8,6 +8,8 @@ The chatbot has been built based on a seq2seq model with attention mecanism and 
 ## Libraries used
   * Tensorflow 1.0.0
   * Numpy 1.18.5
+  
+You will need to have Python 3.5 to install this version of Tensorflow. 
 
 ## Training
 
